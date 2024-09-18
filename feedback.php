@@ -1,16 +1,18 @@
-<?php 
-$title="RybolovClub73" 
-?>;
+<?php
+$title = "RybolovClub73";
+?>
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8" />
     <link href="forAutent.css " rel="stylesheet" type="text/css" />
     <link href="images/icon.webp" rel="shortcut icon" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css?family=Macondo:regular" rel="stylesheet" />
-    <title><?php echo $title?></title>
+    <title>RybolovClub73</title>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -18,26 +20,25 @@ $title="RybolovClub73"
                 <div class="text">RybolovClub73</div>
                 <ul>
                     <li>
-                    <a href="<?php
+                        <a href="<?php
                         // Переменные для ссылки
                         $name = 'Назад'; // текст ссылки
                         $link = 'index.php'; // адрес ссылки
                         $current_page = true; // определяем, активна ли страница
-
+                        
                         // Выводим адрес ссылки
                         echo $link;
-                    ?>" 
-                    <?php 
+                        ?>" <?php
                         // Если это текущая страница, добавляем класс "selected_menu"
                         if ($current_page) {
                             echo ' class="selected_menu"';
                         }
-                    ?>>
+                        ?>>
                         <?php
-                            // Выводим текст ссылки
-                            echo $name;
+                        // Выводим текст ссылки
+                        echo $name;
                         ?>
-                    </a>
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -72,6 +73,6 @@ $title="RybolovClub73"
         <input type="checkbox"><br><br>
         <input type="submit" value="Отправить">
     </form>
-    <?php include('footer.php'); ?>
+    <?php include('footer.php');?>
 </body>
 </html>
