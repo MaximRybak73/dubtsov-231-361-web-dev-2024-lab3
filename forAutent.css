@@ -2,7 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body{
@@ -16,12 +15,6 @@ body{
     font-size: 1em;
     font-family: "Macondo", sans-serif;
     line-height: 135%;
-}
-
-.wrap {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
 a:hover {
@@ -52,17 +45,12 @@ header {
     padding: 25px 15px 10px 20px;
     margin-bottom: 20px;
 }
-html, body {
-    height: 100%;
-}
-
 
 footer {
     border-top: 2px solid silver;
-    margin-top: auto;
+    margin-top: 90px;
     background-color: black;
     padding: 25px 15px 10px 20px;
-
 }
 
 ul {
