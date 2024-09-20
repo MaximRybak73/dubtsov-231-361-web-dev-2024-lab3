@@ -1,6 +1,12 @@
 <?php
 $title = "RybolovClub73";
+$current_page = 'home';
 include "header.php";
+?>
+
+<?php
+// Массив с элементами списка
+$fishing_items = ['Удочка', 'Катушка', 'Приманка', 'Леска', 'Поплавок'];
 ?>
 
 <!DOCTYPE html>
@@ -48,6 +54,16 @@ include "header.php";
             <td>Маховое удилище, спиннинг</td>
         </tr>
     </table>
+
+    <h3 style="margin-left: 10px;">Список рыболовных снастей:</h3>
+    <ul style="margin-left: 10px;">
+        <?php
+        foreach ($fishing_items as $item) {
+            echo "<li>$item</li>";
+        }
+        ?>
+    </ul>
+
     <?php include "footer.php"; ?>
 </body>
 </html>

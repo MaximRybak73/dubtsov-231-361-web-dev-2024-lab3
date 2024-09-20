@@ -1,5 +1,7 @@
 <?php
 $title = "RybolovClub73";
+$current_page = 'login';
+include "header.php";
 ?>
 
 <!DOCTYPE html>
@@ -13,37 +15,6 @@ $title = "RybolovClub73";
     <title><?php echo $title?></title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav class="nav">
-                <div class="text">RybolovClub73</div>
-                <ul>
-                    <li>
-                    <a href="<?php
-                        // Переменные для ссылки
-                        $name = 'Назад'; // текст ссылки
-                        $link = 'index.php'; // адрес ссылки
-                        $current_page = true; // определяем, активна ли страница
-
-                        // Выводим адрес ссылки
-                        echo $link;
-                    ?>" 
-                    <?php 
-                        // Если это текущая страница, добавляем класс "selected_menu"
-                        if ($current_page) {
-                            echo ' class="selected_menu"';
-                        }
-                    ?>>
-                        <?php
-                            // Выводим текст ссылки
-                            echo $name;
-                        ?>
-                    </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
     <form action="https://httpbin.org/post" method="post">
         <label for="user_name">Введите логин:</label>
         <input type="text" placeholder="login" maxlength="15" id="user_name"><br><br>

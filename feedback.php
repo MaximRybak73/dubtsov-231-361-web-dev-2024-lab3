@@ -1,5 +1,7 @@
 <?php
 $title = "RybolovClub73";
+$current_page = 'feedback';
+include("header.php");
 ?>
 
 <!DOCTYPE html>
@@ -7,56 +9,25 @@ $title = "RybolovClub73";
 
 <head>
     <meta charset="UTF-8" />
-    <link href="forAutent.css " rel="stylesheet" type="text/css" />
+    <link href="forFeedback.css " rel="stylesheet" type="text/css" />
     <link href="images/icon.webp" rel="shortcut icon" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css?family=Macondo:regular" rel="stylesheet" />
-    <title>RybolovClub73</title>
+    <title><?php echo $title ?></title>
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <nav class="nav">
-                <div class="text">RybolovClub73</div>
-                <ul>
-                    <li>
-                        <a href="<?php
-                        // Переменные для ссылки
-                        $name = 'Назад'; // текст ссылки
-                        $link = 'index.php'; // адрес ссылки
-                        $current_page = true; // определяем, активна ли страница
-                        
-                        // Выводим адрес ссылки
-                        echo $link;
-                        ?>" <?php
-                        // Если это текущая страница, добавляем класс "selected_menu"
-                        if ($current_page) {
-                            echo ' class="selected_menu"';
-                        }
-                        ?>>
-                        <?php
-                        // Выводим текст ссылки
-                        echo $name;
-                        ?>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
     <form action="https://httpbin.org/post" method="post">
         <label for="FIO">Введите ФИО:</label>
         <input type="text" placeholder="ФИО" id="FIO"><br><br>
 
         <label for="Email">Введите Email:</label>
-        <input type="text" placeholder="Email" id="Email"><br><br>
+        <input type="text" placeholder="Email" id="Email"><br>
 
         <label>Откуда узнали о нас?</label>
         <label><input type="radio" name="state">Социальные сети</label>
         <label><input type="radio" name="state">От друзей</label>
         <label><input type="radio" name="state">Реклама</label>
-        <br><br>
+        <br>
 
         <label>Выберите тип обращения:</label>
         <select>
